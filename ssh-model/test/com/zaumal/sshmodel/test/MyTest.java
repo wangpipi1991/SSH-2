@@ -14,7 +14,15 @@ public class MyTest {
 		logger.info("testSpring..begin..");
 		ApplicationContext ac = new ClassPathXmlApplicationContext("beans.xml");
 		TestService testService = (TestService)ac.getBean("testService");
-		testService.testAdd();
+		//testService.testAdd();
 		logger.info("testSpring..end!!!");
+	}
+	
+	@Test
+	public void testSpringHibernate(){
+		logger.info("testSpringHibernate...begin...");
+		ApplicationContext ac = new ClassPathXmlApplicationContext("beans.xml");
+		
+		logger.info("testSpringHibernate..end!!");
 	}
 }

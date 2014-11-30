@@ -4,11 +4,13 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Insert title here</title>
+<title>register</title>
 </head>
 <body>
 	<p>Hello World</p>
 	<form action="testAction.action">
+		<input name="name" type="text"><br>
+		<input name="age" type="text"><br>
 		<input type="submit" value="submit">
 	</form>
 </body>

@@ -11,9 +11,10 @@
 		http://www.springframework.org/schema/tx/spring-tx.xsd
 		http://www.springframework.org/schema/aop
 		http://www.springframework.org/schema/aop/spring-aop.xsd">
+		<context:annotation-config />
 		
-		<!-- 引入属性文件
-		<context:property-placeholder location="classpath:config.properties"/> -->
+		<!-- 引入属性文件 -->
+		<context:property-placeholder location="classpath:config.properties"/> 
 		
 		<!-- 自动扫描  dao 和 service 包-->
 		<context:component-scan base-package="com.zaumal.sshmodel.dao.impl,com.zaumal.sshmodel.service.impl" />
